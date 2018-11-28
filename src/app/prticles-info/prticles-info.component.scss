@@ -1,0 +1,33 @@
+.container-fluid {
+  background: url("src/assets/shape_white.svg");
+}
+.parti{
+  width: 70%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background: url("src/assets/shape_white.svg");
+
+}
+
+::ng-deep mat-grid-list {
+
+}
+body{
+  background: #F2F2F4;
+}
+
+mat-card{
+  margin: 10%;
+  background: white;
+  border-radius: 50px/10%;
+}
+
+mat-grid-list {
+  background: white;
+}
+
+mat-grid-tile {
+  margin: 3%;
+}
+
+

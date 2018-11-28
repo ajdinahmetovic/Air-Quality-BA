@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a9a9a9;
+      }
+    </style>
+  </defs>
+  <path id="aaa" class="cls-1" d="M54,0A54,54,0,1,1,0,54,54,54,0,0,1,54,0Z"/>
+</svg>

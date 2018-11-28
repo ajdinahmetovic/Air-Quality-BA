@@ -1,0 +1,28 @@
+.heading{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.img-fluid{
+  width: 80%;
+}
+.container {
+
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+::ng-deep mat-grid-list {
+  background-color: #F2F2F4;
+
+}

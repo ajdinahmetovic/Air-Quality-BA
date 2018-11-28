@@ -1,0 +1,17 @@
+<app-scrollbar></app-scrollbar>
+
+<div style="display: block;" >
+  <canvas mdbChart height="200"
+          [chartType]="chartType"
+          [datasets]="chartDatasets"
+          [labels]="chartLabels"
+          [colors]="chartColors"
+          [options]="chartOptions"
+          [legend]="true"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+  </canvas>
+</div>
+<app-prticles-info>
+
+</app-prticles-info>

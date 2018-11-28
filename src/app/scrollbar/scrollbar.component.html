@@ -1,0 +1,39 @@
+<div class="scrollmenu" style="background: #F2F2F4;">
+
+<mat-card *ngFor="let item of rssFeed.channel.itemsReverse" class="card">
+
+  <mat-grid-list [cols]="3" [rowHeight]="75" style="background-color: #FFFFFF">
+    <mat-grid-tile>
+      <div class="photo" >
+        <img style="width: 75%; height: 75%" src={{getColor(item.Desc)}}>
+        </div>
+      <div class="txt">
+        {{item.AQI}}
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2">
+
+      <mat-list>
+
+        <mat-list-item>
+          <h6 style="width: 100%; color: #000; margin-top: 5%; font-family: 'Montserrat', sans-serif">
+            {{chek(item.Desc)}} <br> {{getExtra(checkTxt(item.Desc))}} <br> {{item.ReadingDateTime | date: 'HH:mm'}}
+
+          </h6>
+
+        </mat-list-item>
+
+
+
+      </mat-list>
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+
+</mat-card>
+
+
+</div>

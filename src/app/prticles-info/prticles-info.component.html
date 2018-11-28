@@ -1,0 +1,22 @@
+<body>
+<mat-card>
+
+  <mat-grid-list [cols]="22" rowHeight="85" *ngFor="let item of particles" >
+
+    <mat-grid-tile class="size" [style.background] = item.color >
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="21" i18n="Naslovi" style="text-align: center; " >
+      <h6 style="text-align: center; font-family: 'Montserrat', sans-serif">{{chek(item.title)}} <br> {{getExtra(checkTxt(item.title))}}<br> {{ item.range}}</h6>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  <div style="background-color: #FFFFFF; width: 100%; height: 15px"></div>
+
+</mat-card>
+</body>
+
+<div style="background-color: #F2F2F4; width: 100%; height: 50px">
+
+</div>

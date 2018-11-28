@@ -1,0 +1,59 @@
+div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+
+.container {
+  height: 1%;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 100%;
+}
+
+.centered {
+
+  position: absolute;
+  top: 50%;
+  font-family: 'Montserrat', sans-serif;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.down {
+  font-family: 'Montserrat', sans-serif;
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 40%;
+}
+

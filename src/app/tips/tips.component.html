@@ -1,0 +1,80 @@
+<mdb-carousel [animation]="'slide'" style="height: 100%" >
+
+  <mdb-carousel-item>
+    <mat-card>
+
+  <mat-grid-list [cols]="1" rowHeight="30" style="background: #FFFFFF">
+    <mat-grid-tile>
+      <h3 i18n style="color: #000; font-family: 'Montserrat', sans-serif">For Today</h3>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [rowspan]="11">
+      <p i18n style="color: black;  font-family: 'Montserrat', sans-serif"> {{getToday(rss.getLatestStatus())}} </p>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</mat-card>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+  <mat-card>
+
+    <mat-grid-list [cols]="1" rowHeight="30" style="background: #FFFFFF">
+      <mat-grid-tile>
+        <h3 i18n style="color: #000; font-size: 150%; font-family: 'Montserrat', sans-serif">Health impact</h3>
+      </mat-grid-tile>
+
+
+      <mat-grid-tile [rowspan]="11">
+        <p i18n style="color: black; font-family: 'Montserrat', sans-serif"> {{getImpact()}} </p>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </mat-card>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+  <mat-card>
+
+    <mat-grid-list [cols]="1" rowHeight="30" style="background: #FFFFFF">
+      <mat-grid-tile>
+        <h3 i18n style="color: #000; font-size: 120%; font-family: 'Montserrat', sans-serif">Did you  know ?</h3>
+      </mat-grid-tile>
+
+
+      <mat-grid-tile [rowspan]="11">
+        <p i18n style="color: black; font-family: 'Montserrat', sans-serif"> {{getFact()}} </p>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </mat-card>
+  </mdb-carousel-item>
+
+
+    <mdb-carousel-item *ngFor="let i of groups">
+
+      <mat-card>
+
+        <mat-grid-list [cols]="1" rowHeight="30" style="background: #FFFFFF">
+          <mat-grid-tile>
+            <h3 i18n style="color: #000; font-size: 120%; font-family: 'Montserrat', sans-serif">Sensitive groups</h3>
+          </mat-grid-tile>
+
+
+          <mat-grid-tile [rowspan]="9">
+            <img style="width: 60%" src={{i.imgSrc}}>
+
+          </mat-grid-tile>
+          <mat-grid-tile [rowspan]="2">
+            <p i18n style="color: black; text-align: center; font-family: 'Montserrat', sans-serif"> {{i.desc}} </p>
+          </mat-grid-tile>
+
+        </mat-grid-list>
+
+      </mat-card>
+
+    </mdb-carousel-item>
+
+</mdb-carousel>

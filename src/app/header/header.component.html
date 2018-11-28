@@ -1,0 +1,7 @@
+<mat-grid-list [cols]="1" rowHeight="50">
+  <mat-grid-tile   [style.background]="getColor(rssFeed.getLatestStatus())">
+    <div class="container">
+      <div class="centered" style="width: 100%" i18n>{{rssFeed.getLatestStatus()}}</div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

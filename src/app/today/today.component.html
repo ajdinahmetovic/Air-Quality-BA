@@ -1,0 +1,55 @@
+<h4 align="center" class="day">{{date | date: 'EEEE'}}</h4>
+
+<mat-grid-list [cols]="1">
+  <mat-grid-tile>
+    <div class="container">
+      <img  style="width: 100%" align="center" src={{getShape(rssFeed.getLatestStatus())}}>
+      <div class="centered">{{rssFeed.getLatestAQI()}}</div>
+      <div class="down">AQI</div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list [cols]="1" rowHeight="50">
+
+  <mat-grid-tile>
+    <div class="container">
+      <img style="width: 50%" src="src/assets/location.png">
+      <div class="city">{{rssFeed.channel.title}}, BA</div>
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <div class="container">
+      <img style="width: 30%" src="src/assets/time.png">
+      <div class="city">{{date | date: 'H:mm'}}</div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list [cols]="1" rowHeight="240">
+  <mat-grid-tile>
+    <div class="container" style="text-align: center">
+      <img style="width: 100%" src="src/assets/tipp.png">
+      <div class="headline">{{rssFeed.getLatestStatus()}}</div>
+      <div class="line">{{getMessage()}}</div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list [cols]="1" rowHeight="120">
+  <mat-grid-tile>
+    <div class="container">
+      <img style="width: 28%" src="src/assets/share.svg">
+      <div class="share" (click)="openShareDialog()">SHARE</div>
+    </div>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+<div style="width: 100%; height: 25px">
+
+</div>
+
+

@@ -1,0 +1,77 @@
+.day{
+  margin-top: 6%;
+  font-size: 200%;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 500%;
+}
+
+.centered {
+
+  position: absolute;
+  top: 50%;
+  font-family: 'Montserrat', sans-serif;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.down {
+  font-family: 'Montserrat', sans-serif;
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 40%;
+}
+
+mat-tab-group{
+  background-color: #FF1A1A !important;
+}
+
+.city{
+  position: absolute;
+  top: 55%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25% ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headline{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 5vw;
+}
+
+.line {
+
+  font-family: 'Montserrat', sans-serif;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+
+  font-size: 15%;
+}
+
+.share{
+  font-size: 25%;
+  position: absolute;
+  color: white;
+  top: 55%;
+  font-family: 'Montserrat', sans-serif;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

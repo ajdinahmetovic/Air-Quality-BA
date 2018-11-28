@@ -1,0 +1,11 @@
+<body >
+<mat-grid-list [cols]="1" rowHeight="100">
+  <mat-grid-tile>
+    <div class="fixed-top">
+      <app-header [rssFeed]="rssFeed"></app-header>
+      <app-nav></app-nav>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<router-outlet></router-outlet>
+</body>

@@ -1,0 +1,12 @@
+body{
+  background-color: #F2F2F4;
+}
+
+::ng-deep app-header{
+
+}
+app-nav {
+}
+::ng-deep .no-scroll {
+  position: sticky !important;
+}

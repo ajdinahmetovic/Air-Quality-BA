@@ -1,0 +1,28 @@
+::ng-deep label {
+
+}
+/* active tab */
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+  background-color: white;
+
+}
+/* ink bar */
+::ng-deep .mat-ink-bar {
+  background-color: var(--primary-color,#404040) !important;
+}
+
+::ng-deep .mat-tab-group {
+  background-color: white;
+}
+
+::ng-deep mat-tab {
+  font-family: 'Montserrat', sans-serif !important;
+}
+::ng-deep mat-tab-group {
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+::ng-deep .mat-tab-label{
+  font-family: 'Montserrat', sans-serif !important;
+
+}
